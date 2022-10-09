@@ -1,0 +1,33 @@
+<!doctype html>
+<html class="bg-slate-900">
+  <head>
+    <title>DEMO</title>
+    <link rel="stylesheet" href="/app/static/style.css">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+  </head>
+  <body class="max-w-lg mx-auto rounded-md">
+    <nav class="rounded-t-md prose">
+      <h1 class="m-0 ml-1">DEMO</h1>
+      <ul class="m-0">
+          <li><a href="/app/templates/auth/register.html">Register</a>
+          <li><a href="/app/templates/auth/login.html">Login</a>
+          <li><a href="/app/templates/auth/forgot.html">Forgot your password?</a>
+      </ul>
+    </nav>
+    <section class="content">
+      <header class="mb-2 flex justify-between">
+        <h1>Login</h1>
+      </header>
+    </section>
+<div class="content">
+  <form method="post" action="/app/templates/auth/login.html" class="px-4">
+    <label for="username">Username</label>
+    <input type="text" name="username" id="username" class="rounded-md mb-2" required>
+    <label for="password">Password</label>
+    <input type="password" name="password" id="password" class="rounded-md mb-6" required>
+    <input type="submit" value="Log In" class="w-full bg-indigo-500 text-white rounded-md py-2 cursor-pointer">
+  </form>
+</div>
+
+</body>
+</html>
